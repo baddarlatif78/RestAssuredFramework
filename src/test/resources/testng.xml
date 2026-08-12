@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Restful Booker API Suite">
+
+
+ <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+
+    <test name="CRUD API Tests">
+
+        <classes>
+
+            <class name="tests.AuthTest"/>
+
+            <class name="tests.BookingCreateTest"/>
+
+            <class name="tests.BookingGetTest"/>
+
+            <class name="tests.BookingUpdateTest"/>
+
+            <class name="tests.BookingPatchTest"/>
+
+            <class name="tests.BookingDeleteTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
+
